@@ -12,7 +12,7 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\josec\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\JSPSR\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\josec\\.nuget\\packages"
     ],
     "configProperties": {
