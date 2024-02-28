@@ -41,5 +41,38 @@ namespace licores
         {
 
         }
+
+        private void dgvTablaCliente_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Cliente cliente = new Cliente();
+            cliente.seleccionarCliente(dgvTablaCliente, txtId, txtCedulaClient, txtNombreClient, txtApellidoClient, txtCorreoClient, txtTelefonoClient);
+        }
+
+        private void btnModificarClient_Click(object sender, EventArgs e)
+        {
+            Cliente client = new Cliente();
+            client.modificarClientes(txtId, txtCedulaClient, txtNombreClient, txtApellidoClient, txtCorreoClient, txtTelefonoClient);
+            client.mostrarClientes(dgvTablaCliente);
+        }
+
+        private void btnEliminarClient_Click(object sender, EventArgs e)
+        {
+            Cliente client = new Cliente();
+            client.eliminarClientes(txtId);
+            client.mostrarClientes(dgvTablaCliente);
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            Cliente client = new Cliente();
+            client.mostrarClientes(dgvTablaCliente, txtBuscar);
+        }
+
+        private void btnCargar_Click(object sender, EventArgs e)
+        {
+            Cliente client = new Cliente();
+            client.mostrarClientes(dgvTablaCliente);
+            txtBuscar.Text = "";
+        }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bbyM52mMxVY7osN12iAiAqWmKkvIg48luxVHW33J3EXw9G0YeR6VBoTGwY6YSc2RoqOW4xGm2eRGvIfqlKKePQ==",
+  "dgSpecHash": "FVWFh+YTCqvRPtIPwicdCCIn3vAUU5fZAO3ybqbRRf5Mx+KlG+JXta7KZiM82OyE0tU9KewHgMuWWCinGrMnbg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Documents\\Proyectos\\C#\\licores\\licores\\licores.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_Licoreria\\licores\\licores\\licores.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\google.protobuf\\3.25.1\\google.protobuf.3.25.1.nupkg.sha512",

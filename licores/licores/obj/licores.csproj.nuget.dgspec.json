@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Documents\\Proyectos\\C#\\licores\\licores\\licores.csproj": {}
+    "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_Licoreria\\licores\\licores\\licores.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Documents\\Proyectos\\C#\\licores\\licores\\licores.csproj": {
+    "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_Licoreria\\licores\\licores\\licores.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\Proyectos\\C#\\licores\\licores\\licores.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_Licoreria\\licores\\licores\\licores.csproj",
         "projectName": "licores",
-        "projectPath": "C:\\Users\\USER\\Documents\\Proyectos\\C#\\licores\\licores\\licores.csproj",
+        "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_Licoreria\\licores\\licores\\licores.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Documents\\Proyectos\\C#\\licores\\licores\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_Licoreria\\licores\\licores\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
