@@ -11,7 +11,7 @@ namespace licores
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*if (txtUsuario.Text == "Cedula" || String.IsNullOrEmpty(txtUsuario.Text))
+            if (txtUsuario.Text == "Cedula" || String.IsNullOrEmpty(txtUsuario.Text))
             {
                 msgError("Por favor ingrese su Cedula.");
             }
@@ -36,10 +36,7 @@ namespace licores
                         msgError("La cedula o la contraseña son incorrectas.");
                     }
                 }
-            }*/
-            Home main = new Home();
-            main.Show();
-            this.Hide();
+            }
         }
 
         private void msgError(string msg)
