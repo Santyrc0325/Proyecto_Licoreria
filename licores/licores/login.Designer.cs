@@ -50,7 +50,7 @@ namespace licores
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(241, 196, 15);
+            panel1.BackColor = Color.FromArgb(64, 0, 0);
             panel1.Controls.Add(pictureBox2);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
@@ -60,10 +60,11 @@ namespace licores
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.image_removebg_preview;
-            pictureBox2.Location = new Point(24, 56);
+            pictureBox2.BackColor = Color.FromArgb(72, 21, 30);
+            pictureBox2.Image = Properties.Resources.logo_trial2;
+            pictureBox2.Location = new Point(31, 68);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(200, 200);
+            pictureBox2.Size = new Size(197, 185);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -168,7 +169,7 @@ namespace licores
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
-            Opacity = 0.9D;
+            Opacity = 0.98D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             panel1.ResumeLayout(false);

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Documents\\Proyectos\\C#\\licores\\licores\\licores.csproj": {}
+    "C:\\Users\\josec\\OneDrive\\Documentos\\GitHub\\Proyecto_Licoreria\\licores\\licores\\licores.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Documents\\Proyectos\\C#\\licores\\licores\\licores.csproj": {
+    "C:\\Users\\josec\\OneDrive\\Documentos\\GitHub\\Proyecto_Licoreria\\licores\\licores\\licores.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\Proyectos\\C#\\licores\\licores\\licores.csproj",
+        "projectUniqueName": "C:\\Users\\josec\\OneDrive\\Documentos\\GitHub\\Proyecto_Licoreria\\licores\\licores\\licores.csproj",
         "projectName": "licores",
-        "projectPath": "C:\\Users\\USER\\Documents\\Proyectos\\C#\\licores\\licores\\licores.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Documents\\Proyectos\\C#\\licores\\licores\\obj\\",
+        "projectPath": "C:\\Users\\josec\\OneDrive\\Documentos\\GitHub\\Proyecto_Licoreria\\licores\\licores\\licores.csproj",
+        "packagesPath": "C:\\Users\\josec\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\josec\\OneDrive\\Documentos\\GitHub\\Proyecto_Licoreria\\licores\\licores\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\josec\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -64,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
