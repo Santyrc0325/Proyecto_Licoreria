@@ -45,6 +45,9 @@
             lblCedulaClient = new Label();
             lblApellClient = new Label();
             lblNomClient = new Label();
+            txtBuscar = new TextBox();
+            btnBuscar = new Button();
+            btnCargar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvTablaCliente).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -54,8 +57,9 @@
             dgvTablaCliente.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTablaCliente.Location = new Point(249, 85);
             dgvTablaCliente.Name = "dgvTablaCliente";
-            dgvTablaCliente.Size = new Size(570, 345);
+            dgvTablaCliente.Size = new Size(642, 345);
             dgvTablaCliente.TabIndex = 3;
+            dgvTablaCliente.CellDoubleClick += dgvTablaCliente_CellDoubleClick;
             // 
             // groupBox1
             // 
@@ -106,6 +110,7 @@
             btnEliminarClient.TabIndex = 12;
             btnEliminarClient.Text = "Eliminar";
             btnEliminarClient.UseVisualStyleBackColor = true;
+            btnEliminarClient.Click += btnEliminarClient_Click;
             // 
             // btnModificarClient
             // 
@@ -115,6 +120,7 @@
             btnModificarClient.TabIndex = 11;
             btnModificarClient.Text = "Modificar";
             btnModificarClient.UseVisualStyleBackColor = true;
+            btnModificarClient.Click += btnModificarClient_Click;
             // 
             // btnGuardarClient
             // 
@@ -206,11 +212,42 @@
             lblNomClient.TabIndex = 0;
             lblNomClient.Text = "Nombres:";
             // 
+            // txtBuscar
+            // 
+            txtBuscar.Location = new Point(249, 56);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.PlaceholderText = "Cédula";
+            txtBuscar.Size = new Size(555, 23);
+            txtBuscar.TabIndex = 4;
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.Image = Properties.Resources.lupa__1_;
+            btnBuscar.Location = new Point(808, 56);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(27, 23);
+            btnBuscar.TabIndex = 5;
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
+            // btnCargar
+            // 
+            btnCargar.Image = Properties.Resources.actualizar;
+            btnCargar.Location = new Point(841, 56);
+            btnCargar.Name = "btnCargar";
+            btnCargar.Size = new Size(27, 23);
+            btnCargar.TabIndex = 6;
+            btnCargar.UseVisualStyleBackColor = true;
+            btnCargar.Click += btnCargar_Click;
+            // 
             // FormsCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(849, 522);
+            ClientSize = new Size(895, 522);
+            Controls.Add(btnCargar);
+            Controls.Add(btnBuscar);
+            Controls.Add(txtBuscar);
             Controls.Add(dgvTablaCliente);
             Controls.Add(groupBox1);
             Name = "FormsCliente";
@@ -219,6 +256,7 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -240,5 +278,10 @@
         private Label lblNomClient;
         private TextBox txtId;
         private Label lblId;
+        private TextBox txtBuscar;
+        private Button button1;
+        private Button btnBuscar;
+        private Button button2;
+        private Button btnCargar;
     }
 }
