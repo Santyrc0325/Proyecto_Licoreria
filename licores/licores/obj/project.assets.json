@@ -1786,19 +1786,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\JSPSR\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_Licoreria\\licores\\licores\\licores.csproj",
+      "projectUniqueName": "C:\\Users\\JSPSR\\Desktop\\Santiago\\Proyecto_Licoreria\\licores\\licores\\licores.csproj",
       "projectName": "licores",
-      "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_Licoreria\\licores\\licores\\licores.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_Licoreria\\licores\\licores\\obj\\",
+      "projectPath": "C:\\Users\\JSPSR\\Desktop\\Santiago\\Proyecto_Licoreria\\licores\\licores\\licores.csproj",
+      "packagesPath": "C:\\Users\\JSPSR\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JSPSR\\Desktop\\Santiago\\Proyecto_Licoreria\\licores\\licores\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JSPSR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

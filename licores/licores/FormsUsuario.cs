@@ -28,15 +28,51 @@ namespace licores
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             User users = new User();
-            users.GuardarUsuarios(txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser);
+            users.guardarUsuarios(txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser);
+            users.mostrarUsuarios(dgvTablaUsers);
+        }
+
+        private void FormsUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+            User users = new User();
+            users.guardarUsuarios(txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser);
             users.mostrarUsuarios(dgvTablaUsers);
         }
 
         private void dgvTablaUsers_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             User users = new User();
-            users.SeleccionarUsuario(dgvTablaUsers, txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser);
+            users.seleccionarUsuario(dgvTablaUsers, txtidUser, txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser);
+        }
 
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            User users = new User();
+            users.modificarUsuarios(txtidUser, txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser);
+            users.mostrarUsuarios(dgvTablaUsers);
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+            User users = new User();
+            users.eliminarUsuarios(txtidUser);
+            users.mostrarUsuarios(dgvTablaUsers);
         }
     }
 }

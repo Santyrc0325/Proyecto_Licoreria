@@ -54,7 +54,7 @@ namespace licores.Clases
             }
         }
 
-        public void GuardarUsuarios(TextBox cedula, TextBox nombre, TextBox apellidos, TextBox correo, TextBox telefono)
+        public void guardarUsuarios(TextBox cedula, TextBox nombre, TextBox apellidos, TextBox correo, TextBox telefono)
         {
 
             long numCedula = (int)Convert.ToInt64(cedula.Text);
@@ -69,7 +69,7 @@ namespace licores.Clases
 
                 MySqlCommand myComand = new MySqlCommand(query, conexion.Open());
                 MySqlDataReader reader = myComand.ExecuteReader();
-                MessageBox.Show("Se guardo al cliente Exitosamente.");
+                MessageBox.Show("Se guardo al usuario Exitosamente.");
                 while (reader.Read())
                 {
 
@@ -84,10 +84,12 @@ namespace licores.Clases
 
         }
 
-        public void SeleccionarUsuario(DataGridView tablaUsuarios, TextBox cedula, TextBox nombre, TextBox apellidos, TextBox correo, TextBox telefono)
+        public void seleccionarUsuario(DataGridView tablaUsuarios,TextBox idUser, TextBox cedula, TextBox nombre, TextBox apellidos, TextBox correo, TextBox telefono)
         {
             try
             {
+                idUser.Text = tablaUsuarios.CurrentRow.Cells[0].Value.ToString();
+                cedula.Text = tablaUsuarios.CurrentRow.Cells[1].Value.ToString();
                 cedula.Text = tablaUsuarios.CurrentRow.Cells[1].Value.ToString();
                 nombre.Text = tablaUsuarios.CurrentRow.Cells[2].Value.ToString();
                 apellidos.Text = tablaUsuarios.CurrentRow.Cells[3].Value.ToString();
@@ -96,8 +98,64 @@ namespace licores.Clases
             }
             catch (Exception ex)
             {
-                MessageBox.Show("No se logor seleccionar los campos registrados, error: " + ex.ToString());
+                MessageBox.Show("No se logro seleccionar los campos registrados, error: " + ex.ToString());
             }
+        }
+
+        public void modificarUsuarios(TextBox idUser, TextBox cedula, TextBox nombre, TextBox apellidos, TextBox correo, TextBox telefono)
+        {
+            int numidUser = Convert.ToInt32(idUser.Text);
+
+            try
+            {
+                Conexion conexion = new Conexion();
+
+                string query = "UPDATE users set id_User='" + numidUser + "', cedula_User='" + cedula.Text + "',nombre_User='" + nombre.Text +
+                    "',apellido_User='" + apellidos.Text + "',correo_User='" + correo.Text + "telefono_User=" + telefono.Text + "'WHERE id_User='" + idUser + "';";
+
+
+                MySqlCommand myComand = new MySqlCommand(query, conexion.Open());
+                MySqlDataReader reader = myComand.ExecuteReader();
+                MessageBox.Show("Se modifico al usuario Exitosamente.");
+                while (reader.Read())
+                {
+
+                }
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error no se modifico: " + ex.ToString());
+            }
+
+
+        }
+
+        public void eliminarUsuarios(TextBox idUser)
+        {
+            int numidUser = Convert.ToInt32(idUser.Text);
+
+            try
+            {
+                Conexion conexion = new Conexion();
+
+                string query = "DELETE FROM users WHERE id_User='" + numidUser + "';";
+
+                MySqlCommand myComand = new MySqlCommand(query, conexion.Open());
+                MySqlDataReader reader = myComand.ExecuteReader();
+                MessageBox.Show("Se Elimino al usuario Exitosamente.");
+                while (reader.Read())
+                {
+
+                }
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error no se Elimino: " + ex.ToString());
+            }
+
+
         }
     }
 }
