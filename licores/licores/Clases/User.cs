@@ -57,14 +57,12 @@ namespace licores.Clases
         public void guardarUsuarios(TextBox cedula, TextBox nombre, TextBox apellidos, TextBox correo, TextBox telefono)
         {
 
-            long numCedula = (int)Convert.ToInt64(cedula.Text);
-            long numTelefono = (long)(Int128)Convert.ToInt64(telefono.Text);
 
             try
             {
                 Conexion conexion = new Conexion();
 
-                string query = "insert into users (cedula_User, nombre_User, apellido_User, correo_User, telefono_User, status_User)" + "values ('" + numCedula + "', '" + nombre.Text + "', '" + apellidos.Text + "', '" + correo.Text + "', '" + numTelefono + "', '1');";
+                string query = "insert into users (cedula_User, nombre_User, apellido_User, correo_User, telefono_User, status_User)" + "values ('" + cedula.Text + "', '" + nombre.Text + "', '" + apellidos.Text + "', '" + correo.Text + "', '" + telefono.Text + "', '1');";
 
 
                 MySqlCommand myComand = new MySqlCommand(query, conexion.Open());
@@ -110,22 +108,22 @@ namespace licores.Clases
             {
                 Conexion conexion = new Conexion();
 
-                string query = "UPDATE users set id_User='" + numidUser + "', cedula_User='" + cedula.Text + "',nombre_User='" + nombre.Text +
-                    "',apellido_User='" + apellidos.Text + "',correo_User='" + correo.Text + "telefono_User=" + telefono.Text + "'WHERE id_User='" + idUser + "';";
+                string query = "update users set cedula_User = '" + cedula.Text + "', nombre_User= '" + nombre.Text + "', apellido_User= '" + apellidos.Text + "', correo_User= '" + correo.Text + "', telefono_User= '" + telefono.Text + "' where id_User = '" + numidUser + "';";
 
 
                 MySqlCommand myComand = new MySqlCommand(query, conexion.Open());
                 MySqlDataReader reader = myComand.ExecuteReader();
-                MessageBox.Show("Se modifico al usuario Exitosamente.");
+                MessageBox.Show("Se Actualizo la informacion del usuario Exitosamente.");
                 while (reader.Read())
                 {
 
                 }
                 conexion.Close();
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error no se modifico: " + ex.ToString());
+                MessageBox.Show("No funciona Actualizar Usuarios." + ex.ToString());
             }
 
 

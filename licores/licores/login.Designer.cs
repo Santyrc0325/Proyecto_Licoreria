@@ -61,7 +61,7 @@ namespace licores
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.FromArgb(72, 21, 30);
-            pictureBox2.Image = Properties.Resources.logo_trial2;
+            pictureBox2.Image = Properties.Resources.logo_trial;
             pictureBox2.Location = new Point(31, 68);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(197, 185);

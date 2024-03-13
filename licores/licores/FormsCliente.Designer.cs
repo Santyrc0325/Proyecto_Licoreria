@@ -216,13 +216,13 @@
             // 
             txtBuscar.Location = new Point(249, 56);
             txtBuscar.Name = "txtBuscar";
-            txtBuscar.PlaceholderText = "Cédula";
+            txtBuscar.PlaceholderText = "Buscar cliente por cédula";
             txtBuscar.Size = new Size(555, 23);
             txtBuscar.TabIndex = 4;
             // 
             // btnBuscar
             // 
-            btnBuscar.Image = Properties.Resources.lupa__1_;
+            btnBuscar.Image = Properties.Resources.lupa;
             btnBuscar.Location = new Point(808, 56);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(27, 23);

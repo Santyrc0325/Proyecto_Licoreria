@@ -88,7 +88,7 @@
             button9.FlatAppearance.BorderSize = 0;
             button9.FlatStyle = FlatStyle.Flat;
             button9.ForeColor = SystemColors.ControlLightLight;
-            button9.Image = Properties.Resources.cerrar_sesion;
+            button9.Image = Properties.Resources.cerrar_sesion1;
             button9.ImageAlign = ContentAlignment.MiddleLeft;
             button9.Location = new Point(0, 80);
             button9.Name = "button9";
@@ -104,7 +104,7 @@
             button7.FlatAppearance.BorderSize = 0;
             button7.FlatStyle = FlatStyle.Flat;
             button7.ForeColor = SystemColors.ControlLightLight;
-            button7.Image = Properties.Resources.servicio_al_cliente;
+            button7.Image = Properties.Resources.servicio_al_cliente1;
             button7.ImageAlign = ContentAlignment.MiddleLeft;
             button7.Location = new Point(0, 40);
             button7.Name = "button7";
@@ -184,7 +184,7 @@
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.ForeColor = SystemColors.ControlLightLight;
-            button4.Image = Properties.Resources.producto;
+            button4.Image = Properties.Resources.producto1;
             button4.ImageAlign = ContentAlignment.MiddleLeft;
             button4.Location = new Point(0, 80);
             button4.Name = "button4";
@@ -217,7 +217,7 @@
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.ForeColor = SystemColors.ControlLightLight;
-            button2.Image = Properties.Resources.administrador;
+            button2.Image = Properties.Resources.administrador1;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
             button2.Location = new Point(0, 0);
             button2.Name = "button2";
@@ -236,7 +236,7 @@
             button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(72, 21, 30);
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = SystemColors.MenuBar;
-            button1.Image = Properties.Resources.formularios_de_google__1_;
+            button1.Image = Properties.Resources.formularios_de_google;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.Location = new Point(0, 159);
             button1.Name = "button1";
@@ -259,7 +259,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.logo_trial;
+            pictureBox2.Image = Properties.Resources.logo_trial__1_;
             pictureBox2.Location = new Point(12, 40);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(157, 66);
@@ -290,7 +290,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.logo_trial2;
+            pictureBox1.Image = Properties.Resources.logo_trial;
             pictureBox1.Location = new Point(320, 61);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(249, 247);

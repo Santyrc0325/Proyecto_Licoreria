@@ -14,7 +14,12 @@ namespace licores
     {
         public FormsProductos()
         {
-            InitializeComponent();
+
+        }
+
+        private void FormsProductos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
