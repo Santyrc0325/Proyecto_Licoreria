@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("licores")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+136016c3de95f20088924f7947e1bcab7fb1d9f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b15abb6a0adb21557cd62a871290fa93cb7d7e24")]
 [assembly: System.Reflection.AssemblyProductAttribute("licores")]
 [assembly: System.Reflection.AssemblyTitleAttribute("licores")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -74,5 +74,18 @@ namespace licores
             users.eliminarUsuarios(txtidUser);
             users.mostrarUsuarios(dgvTablaUsers);
         }
+
+        private void btnBuscarUsuario_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            user.mostrarUsuarios(dgvTablaUsers, txtBuscarUsuario);
+        }
+
+        private void btnCargarProductos_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            user.mostrarUsuarios(dgvTablaUsers);
+            txtBuscarUsuario.Text = "";
+        }
     }
 }

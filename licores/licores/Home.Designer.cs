@@ -67,7 +67,7 @@
             panelHMenuLateral.Dock = DockStyle.Left;
             panelHMenuLateral.Location = new Point(0, 0);
             panelHMenuLateral.Name = "panelHMenuLateral";
-            panelHMenuLateral.Size = new Size(183, 561);
+            panelHMenuLateral.Size = new Size(183, 589);
             panelHMenuLateral.TabIndex = 0;
             // 
             // panel2
@@ -93,10 +93,11 @@
             button9.Location = new Point(0, 80);
             button9.Name = "button9";
             button9.Padding = new Padding(5, 0, 0, 0);
-            button9.Size = new Size(183, 40);
+            button9.Size = new Size(183, 38);
             button9.TabIndex = 6;
             button9.Text = "Salir";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click_1;
             // 
             // button7
             // 
@@ -177,6 +178,7 @@
             button5.TabIndex = 3;
             button5.Text = "Ventas";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click_1;
             // 
             // button4
             // 
@@ -270,13 +272,13 @@
             // 
             // panelChildForms
             // 
+            panelChildForms.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panelChildForms.BackColor = Color.FromArgb(72, 21, 30);
             panelChildForms.Controls.Add(pictureBox3);
             panelChildForms.Controls.Add(pictureBox1);
-            panelChildForms.Dock = DockStyle.Top;
             panelChildForms.Location = new Point(183, 0);
             panelChildForms.Name = "panelChildForms";
-            panelChildForms.Size = new Size(932, 561);
+            panelChildForms.Size = new Size(932, 589);
             panelChildForms.TabIndex = 1;
             // 
             // pictureBox3
@@ -304,7 +306,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            ClientSize = new Size(1115, 561);
+            ClientSize = new Size(1115, 589);
             Controls.Add(panelChildForms);
             Controls.Add(panelHMenuLateral);
             MinimumSize = new Size(950, 600);

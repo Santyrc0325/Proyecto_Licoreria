@@ -54,6 +54,28 @@ namespace licores.Clases
             }
         }
 
+        public void mostrarUsuarios(DataGridView tablaUsuarios, TextBox txtBuscarUsuario)
+        {
+            try
+            {
+                Conexion conexion = new Conexion();
+
+                string query = "select * from Users WHERE cedula_User='"+txtBuscarUsuario.Text+"';";
+                tablaUsuarios.DataSource = null;
+                MySqlDataAdapter adapter = new MySqlDataAdapter(query, conexion.Open());
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                tablaUsuarios.DataSource = dt;
+                conexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Mi perro no funciona ver clientes." + ex.ToString());
+            }
+        }
+
         public void guardarUsuarios(TextBox cedula, TextBox nombre, TextBox apellidos, TextBox correo, TextBox telefono)
         {
 

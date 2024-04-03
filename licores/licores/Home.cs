@@ -78,6 +78,7 @@ namespace licores
 
         private void button5_Click_1(object sender, EventArgs e)
         {
+            openChildForm(new FormsVentas());
             hideSubMenu();
         }
 
@@ -93,7 +94,7 @@ namespace licores
 
         private void button9_Click_1(object sender, EventArgs e)
         {
-            hideSubMenu();
+            Application.Exit();
         }
         #endregion
         private Form activeForm = null;
@@ -110,9 +111,6 @@ namespace licores
             childForm.Show();
 
         }
-
-
-
     }
 
 

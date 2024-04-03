@@ -109,14 +109,16 @@ namespace licores
             lblCantProducto = new Label();
             lblNomProducto = new Label();
             lblRefProducto = new Label();
+            panel1 = new Panel();
             ((ISupportInitialize)dgvTablaProducto).BeginInit();
             groupBox1Producto.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // btnCargarProducto
             // 
             btnCargarProducto.Image = Properties.Resources.actualizar;
-            btnCargarProducto.Location = new Point(827, 28);
+            btnCargarProducto.Location = new Point(235, 27);
             btnCargarProducto.Name = "btnCargarProducto";
             btnCargarProducto.Size = new Size(27, 23);
             btnCargarProducto.TabIndex = 11;
@@ -126,7 +128,7 @@ namespace licores
             // btnBuscarProducto
             // 
             btnBuscarProducto.Image = Properties.Resources.lupa;
-            btnBuscarProducto.Location = new Point(794, 28);
+            btnBuscarProducto.Location = new Point(268, 27);
             btnBuscarProducto.Name = "btnBuscarProducto";
             btnBuscarProducto.Size = new Size(27, 23);
             btnBuscarProducto.TabIndex = 10;
@@ -135,14 +137,18 @@ namespace licores
             // 
             // txtBuscarProducto
             // 
-            txtBuscarProducto.Location = new Point(235, 28);
+            txtBuscarProducto.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtBuscarProducto.Location = new Point(301, 28);
             txtBuscarProducto.Name = "txtBuscarProducto";
             txtBuscarProducto.PlaceholderText = "Buscar producto por nombre";
-            txtBuscarProducto.Size = new Size(555, 23);
+            txtBuscarProducto.Size = new Size(576, 23);
             txtBuscarProducto.TabIndex = 9;
             // 
             // dgvTablaProducto
             // 
+            dgvTablaProducto.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvTablaProducto.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvTablaProducto.BackgroundColor = SystemColors.ButtonHighlight;
             dgvTablaProducto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTablaProducto.Location = new Point(235, 57);
             dgvTablaProducto.Name = "dgvTablaProducto";
@@ -152,6 +158,8 @@ namespace licores
             // 
             // groupBox1Producto
             // 
+            groupBox1Producto.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            groupBox1Producto.BackColor = Color.FromArgb(72, 21, 30);
             groupBox1Producto.Controls.Add(txtIdProducto);
             groupBox1Producto.Controls.Add(lblIdProducto);
             groupBox1Producto.Controls.Add(btnEliminarProducto);
@@ -167,6 +175,8 @@ namespace licores
             groupBox1Producto.Controls.Add(lblCantProducto);
             groupBox1Producto.Controls.Add(lblNomProducto);
             groupBox1Producto.Controls.Add(lblRefProducto);
+            groupBox1Producto.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            groupBox1Producto.ForeColor = Color.White;
             groupBox1Producto.Location = new Point(9, 41);
             groupBox1Producto.Name = "groupBox1Producto";
             groupBox1Producto.Size = new Size(220, 361);
@@ -176,10 +186,10 @@ namespace licores
             // 
             // txtIdProducto
             // 
-            txtIdProducto.Location = new Point(77, 26);
+            txtIdProducto.Location = new Point(84, 26);
             txtIdProducto.Name = "txtIdProducto";
             txtIdProducto.ReadOnly = true;
-            txtIdProducto.Size = new Size(134, 23);
+            txtIdProducto.Size = new Size(127, 23);
             txtIdProducto.TabIndex = 14;
             // 
             // lblIdProducto
@@ -187,12 +197,13 @@ namespace licores
             lblIdProducto.AutoSize = true;
             lblIdProducto.Location = new Point(12, 34);
             lblIdProducto.Name = "lblIdProducto";
-            lblIdProducto.Size = new Size(20, 15);
+            lblIdProducto.Size = new Size(21, 15);
             lblIdProducto.TabIndex = 13;
             lblIdProducto.Text = "Id:";
             // 
             // btnEliminarProducto
             // 
+            btnEliminarProducto.ForeColor = Color.Black;
             btnEliminarProducto.Location = new Point(119, 297);
             btnEliminarProducto.Name = "btnEliminarProducto";
             btnEliminarProducto.Size = new Size(95, 32);
@@ -203,6 +214,7 @@ namespace licores
             // 
             // btnModificarProducto
             // 
+            btnModificarProducto.ForeColor = Color.Black;
             btnModificarProducto.Location = new Point(12, 297);
             btnModificarProducto.Name = "btnModificarProducto";
             btnModificarProducto.Size = new Size(101, 32);
@@ -213,6 +225,7 @@ namespace licores
             // 
             // btnGuardarProducto
             // 
+            btnGuardarProducto.ForeColor = Color.Black;
             btnGuardarProducto.Location = new Point(12, 258);
             btnGuardarProducto.Name = "btnGuardarProducto";
             btnGuardarProducto.Size = new Size(202, 33);
@@ -223,37 +236,37 @@ namespace licores
             // 
             // txtIvaProducto
             // 
-            txtIvaProducto.Location = new Point(77, 218);
+            txtIvaProducto.Location = new Point(84, 218);
             txtIvaProducto.Name = "txtIvaProducto";
-            txtIvaProducto.Size = new Size(134, 23);
+            txtIvaProducto.Size = new Size(127, 23);
             txtIvaProducto.TabIndex = 9;
             // 
             // txtPrecioProducto
             // 
-            txtPrecioProducto.Location = new Point(77, 180);
+            txtPrecioProducto.Location = new Point(84, 180);
             txtPrecioProducto.Name = "txtPrecioProducto";
-            txtPrecioProducto.Size = new Size(134, 23);
+            txtPrecioProducto.Size = new Size(127, 23);
             txtPrecioProducto.TabIndex = 8;
             // 
             // txtCantProducto
             // 
-            txtCantProducto.Location = new Point(77, 138);
+            txtCantProducto.Location = new Point(84, 138);
             txtCantProducto.Name = "txtCantProducto";
-            txtCantProducto.Size = new Size(134, 23);
+            txtCantProducto.Size = new Size(127, 23);
             txtCantProducto.TabIndex = 7;
             // 
             // txtNombreProducto
             // 
-            txtNombreProducto.Location = new Point(77, 100);
+            txtNombreProducto.Location = new Point(84, 100);
             txtNombreProducto.Name = "txtNombreProducto";
-            txtNombreProducto.Size = new Size(134, 23);
+            txtNombreProducto.Size = new Size(127, 23);
             txtNombreProducto.TabIndex = 6;
             // 
             // txtRefProducto
             // 
-            txtRefProducto.Location = new Point(77, 62);
+            txtRefProducto.Location = new Point(84, 62);
             txtRefProducto.Name = "txtRefProducto";
-            txtRefProducto.Size = new Size(134, 23);
+            txtRefProducto.Size = new Size(127, 23);
             txtRefProducto.TabIndex = 5;
             // 
             // lblIVAProducto
@@ -261,7 +274,7 @@ namespace licores
             lblIVAProducto.AutoSize = true;
             lblIVAProducto.Location = new Point(12, 226);
             lblIVAProducto.Name = "lblIVAProducto";
-            lblIVAProducto.Size = new Size(25, 15);
+            lblIVAProducto.Size = new Size(27, 15);
             lblIVAProducto.TabIndex = 4;
             lblIVAProducto.Text = "Iva:";
             // 
@@ -270,7 +283,7 @@ namespace licores
             lblPrecioProducto.AutoSize = true;
             lblPrecioProducto.Location = new Point(12, 188);
             lblPrecioProducto.Name = "lblPrecioProducto";
-            lblPrecioProducto.Size = new Size(43, 15);
+            lblPrecioProducto.Size = new Size(45, 15);
             lblPrecioProducto.TabIndex = 3;
             lblPrecioProducto.Text = "Precio:";
             // 
@@ -288,7 +301,7 @@ namespace licores
             lblNomProducto.AutoSize = true;
             lblNomProducto.Location = new Point(12, 108);
             lblNomProducto.Name = "lblNomProducto";
-            lblNomProducto.Size = new Size(54, 15);
+            lblNomProducto.Size = new Size(56, 15);
             lblNomProducto.TabIndex = 1;
             lblNomProducto.Text = "Nombre:";
             // 
@@ -297,24 +310,35 @@ namespace licores
             lblRefProducto.AutoSize = true;
             lblRefProducto.Location = new Point(12, 70);
             lblRefProducto.Name = "lblRefProducto";
-            lblRefProducto.Size = new Size(65, 15);
+            lblRefProducto.Size = new Size(71, 15);
             lblRefProducto.TabIndex = 0;
             lblRefProducto.Text = "Referencia:";
+            // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.BackColor = Color.FromArgb(72, 21, 30);
+            panel1.Controls.Add(txtBuscarProducto);
+            panel1.Controls.Add(btnCargarProducto);
+            panel1.Controls.Add(btnBuscarProducto);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(894, 481);
+            panel1.TabIndex = 12;
             // 
             // FormsProductos
             // 
             ClientSize = new Size(894, 481);
-            Controls.Add(btnCargarProducto);
-            Controls.Add(btnBuscarProducto);
-            Controls.Add(txtBuscarProducto);
             Controls.Add(dgvTablaProducto);
             Controls.Add(groupBox1Producto);
+            Controls.Add(panel1);
             Name = "FormsProductos";
             ((ISupportInitialize)dgvTablaProducto).EndInit();
             groupBox1Producto.ResumeLayout(false);
             groupBox1Producto.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
     }
 }

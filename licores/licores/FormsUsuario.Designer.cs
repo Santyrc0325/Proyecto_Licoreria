@@ -45,21 +45,30 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            panel1 = new Panel();
+            btnCargarUsuario = new Button();
+            btnBuscarUsuario = new Button();
+            txtBuscarUsuario = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvTablaUsers).BeginInit();
             groupBox1.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // dgvTablaUsers
             // 
+            dgvTablaUsers.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvTablaUsers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvTablaUsers.BackgroundColor = Color.White;
             dgvTablaUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTablaUsers.Location = new Point(267, 75);
+            dgvTablaUsers.Location = new Point(239, 60);
             dgvTablaUsers.Name = "dgvTablaUsers";
-            dgvTablaUsers.Size = new Size(570, 354);
+            dgvTablaUsers.Size = new Size(642, 338);
             dgvTablaUsers.TabIndex = 3;
             dgvTablaUsers.CellMouseClick += dgvTablaUsers_CellMouseClick;
             // 
             // groupBox1
             // 
+            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(txtidUser);
             groupBox1.Controls.Add(btnEliminar);
@@ -75,9 +84,11 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(25, 53);
+            groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            groupBox1.ForeColor = Color.White;
+            groupBox1.Location = new Point(12, 38);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(220, 394);
+            groupBox1.Size = new Size(221, 360);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos Usuario";
@@ -87,7 +98,7 @@
             label6.AutoSize = true;
             label6.Location = new Point(12, 30);
             label6.Name = "label6";
-            label6.Size = new Size(60, 15);
+            label6.Size = new Size(63, 15);
             label6.TabIndex = 14;
             label6.Text = "Id Usuario";
             label6.Click += label6_Click;
@@ -104,6 +115,7 @@
             // 
             // btnEliminar
             // 
+            btnEliminar.ForeColor = Color.Black;
             btnEliminar.Location = new Point(119, 297);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(95, 32);
@@ -114,6 +126,7 @@
             // 
             // btnModificar
             // 
+            btnModificar.ForeColor = Color.Black;
             btnModificar.Location = new Point(12, 297);
             btnModificar.Name = "btnModificar";
             btnModificar.Size = new Size(101, 32);
@@ -124,6 +137,7 @@
             // 
             // btnGuardar
             // 
+            btnGuardar.ForeColor = Color.Black;
             btnGuardar.Location = new Point(12, 258);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(202, 33);
@@ -172,7 +186,7 @@
             label5.AutoSize = true;
             label5.Location = new Point(15, 219);
             label5.Name = "label5";
-            label5.Size = new Size(55, 15);
+            label5.Size = new Size(59, 15);
             label5.TabIndex = 4;
             label5.Text = "Telefono:";
             // 
@@ -181,7 +195,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(15, 181);
             label4.Name = "label4";
-            label4.Size = new Size(46, 15);
+            label4.Size = new Size(48, 15);
             label4.TabIndex = 3;
             label4.Text = "Correo:";
             // 
@@ -199,7 +213,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(15, 101);
             label2.Name = "label2";
-            label2.Size = new Size(59, 15);
+            label2.Size = new Size(60, 15);
             label2.TabIndex = 1;
             label2.Text = "Apellidos:";
             // 
@@ -208,23 +222,66 @@
             label1.AutoSize = true;
             label1.Location = new Point(15, 63);
             label1.Name = "label1";
-            label1.Size = new Size(59, 15);
+            label1.Size = new Size(61, 15);
             label1.TabIndex = 0;
             label1.Text = "Nombres:";
+            // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.BackColor = Color.FromArgb(72, 21, 30);
+            panel1.Controls.Add(btnCargarUsuario);
+            panel1.Controls.Add(btnBuscarUsuario);
+            panel1.Controls.Add(txtBuscarUsuario);
+            panel1.Controls.Add(dgvTablaUsers);
+            panel1.Controls.Add(groupBox1);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(893, 481);
+            panel1.TabIndex = 4;
+            // 
+            // btnCargarUsuario
+            // 
+            btnCargarUsuario.Image = Properties.Resources.actualizar;
+            btnCargarUsuario.Location = new Point(239, 32);
+            btnCargarUsuario.Name = "btnCargarUsuario";
+            btnCargarUsuario.Size = new Size(27, 23);
+            btnCargarUsuario.TabIndex = 14;
+            btnCargarUsuario.UseVisualStyleBackColor = true;
+            btnCargarUsuario.Click += btnCargarProductos_Click;
+            // 
+            // btnBuscarUsuario
+            // 
+            btnBuscarUsuario.Image = Properties.Resources.lupa;
+            btnBuscarUsuario.Location = new Point(272, 32);
+            btnBuscarUsuario.Name = "btnBuscarUsuario";
+            btnBuscarUsuario.Size = new Size(27, 23);
+            btnBuscarUsuario.TabIndex = 13;
+            btnBuscarUsuario.UseVisualStyleBackColor = true;
+            // 
+            // txtBuscarUsuario
+            // 
+            txtBuscarUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtBuscarUsuario.Location = new Point(305, 31);
+            txtBuscarUsuario.Name = "txtBuscarUsuario";
+            txtBuscarUsuario.PlaceholderText = "Buscar usuario por cedula";
+            txtBuscarUsuario.Size = new Size(576, 23);
+            txtBuscarUsuario.TabIndex = 12;
             // 
             // FormsUsuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(849, 522);
-            Controls.Add(dgvTablaUsers);
-            Controls.Add(groupBox1);
+            ClientSize = new Size(893, 481);
+            Controls.Add(panel1);
             Name = "FormsUsuario";
             Text = "Form3";
             Load += FormsUsuario_Load;
             ((System.ComponentModel.ISupportInitialize)dgvTablaUsers).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -247,5 +304,12 @@
         private Label label1;
         private Label label6;
         private TextBox txtidUser;
+        private Panel panel1;
+        private Button btnCargarProducto;
+        private Button btnBuscarProducto;
+        private TextBox txtBuscarProducto;
+        private Button btnCargarUsuario;
+        private Button btnBuscarUsuario;
+        private TextBox txtBuscarUsuario;
     }
 }

@@ -48,14 +48,19 @@
             txtBuscar = new TextBox();
             btnBuscar = new Button();
             btnCargar = new Button();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dgvTablaCliente).BeginInit();
             groupBox1.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // dgvTablaCliente
             // 
+            dgvTablaCliente.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvTablaCliente.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvTablaCliente.BackgroundColor = Color.White;
             dgvTablaCliente.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTablaCliente.Location = new Point(249, 85);
+            dgvTablaCliente.Location = new Point(248, 83);
             dgvTablaCliente.Name = "dgvTablaCliente";
             dgvTablaCliente.Size = new Size(642, 345);
             dgvTablaCliente.TabIndex = 3;
@@ -63,6 +68,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             groupBox1.Controls.Add(txtId);
             groupBox1.Controls.Add(lblId);
             groupBox1.Controls.Add(btnEliminarClient);
@@ -78,7 +84,9 @@
             groupBox1.Controls.Add(lblCedulaClient);
             groupBox1.Controls.Add(lblApellClient);
             groupBox1.Controls.Add(lblNomClient);
-            groupBox1.Location = new Point(23, 69);
+            groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            groupBox1.ForeColor = Color.White;
+            groupBox1.Location = new Point(22, 67);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(220, 361);
             groupBox1.TabIndex = 2;
@@ -98,12 +106,13 @@
             lblId.AutoSize = true;
             lblId.Location = new Point(12, 34);
             lblId.Name = "lblId";
-            lblId.Size = new Size(20, 15);
+            lblId.Size = new Size(21, 15);
             lblId.TabIndex = 13;
             lblId.Text = "Id:";
             // 
             // btnEliminarClient
             // 
+            btnEliminarClient.ForeColor = Color.Black;
             btnEliminarClient.Location = new Point(119, 297);
             btnEliminarClient.Name = "btnEliminarClient";
             btnEliminarClient.Size = new Size(95, 32);
@@ -114,6 +123,7 @@
             // 
             // btnModificarClient
             // 
+            btnModificarClient.ForeColor = Color.Black;
             btnModificarClient.Location = new Point(12, 297);
             btnModificarClient.Name = "btnModificarClient";
             btnModificarClient.Size = new Size(101, 32);
@@ -124,6 +134,7 @@
             // 
             // btnGuardarClient
             // 
+            btnGuardarClient.ForeColor = Color.Black;
             btnGuardarClient.Location = new Point(12, 258);
             btnGuardarClient.Name = "btnGuardarClient";
             btnGuardarClient.Size = new Size(202, 33);
@@ -172,7 +183,7 @@
             lblTelefClient.AutoSize = true;
             lblTelefClient.Location = new Point(12, 226);
             lblTelefClient.Name = "lblTelefClient";
-            lblTelefClient.Size = new Size(55, 15);
+            lblTelefClient.Size = new Size(59, 15);
             lblTelefClient.TabIndex = 4;
             lblTelefClient.Text = "Telefono:";
             // 
@@ -181,7 +192,7 @@
             lblCorreoClient.AutoSize = true;
             lblCorreoClient.Location = new Point(12, 188);
             lblCorreoClient.Name = "lblCorreoClient";
-            lblCorreoClient.Size = new Size(46, 15);
+            lblCorreoClient.Size = new Size(48, 15);
             lblCorreoClient.TabIndex = 3;
             lblCorreoClient.Text = "Correo:";
             // 
@@ -199,7 +210,7 @@
             lblApellClient.AutoSize = true;
             lblApellClient.Location = new Point(12, 108);
             lblApellClient.Name = "lblApellClient";
-            lblApellClient.Size = new Size(59, 15);
+            lblApellClient.Size = new Size(60, 15);
             lblApellClient.TabIndex = 1;
             lblApellClient.Text = "Apellidos:";
             // 
@@ -208,22 +219,23 @@
             lblNomClient.AutoSize = true;
             lblNomClient.Location = new Point(12, 70);
             lblNomClient.Name = "lblNomClient";
-            lblNomClient.Size = new Size(59, 15);
+            lblNomClient.Size = new Size(61, 15);
             lblNomClient.TabIndex = 0;
             lblNomClient.Text = "Nombres:";
             // 
             // txtBuscar
             // 
-            txtBuscar.Location = new Point(249, 56);
+            txtBuscar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtBuscar.Location = new Point(314, 54);
             txtBuscar.Name = "txtBuscar";
             txtBuscar.PlaceholderText = "Buscar cliente por cédula";
-            txtBuscar.Size = new Size(555, 23);
+            txtBuscar.Size = new Size(576, 23);
             txtBuscar.TabIndex = 4;
             // 
             // btnBuscar
             // 
             btnBuscar.Image = Properties.Resources.lupa;
-            btnBuscar.Location = new Point(808, 56);
+            btnBuscar.Location = new Point(281, 54);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(27, 23);
             btnBuscar.TabIndex = 5;
@@ -233,30 +245,41 @@
             // btnCargar
             // 
             btnCargar.Image = Properties.Resources.actualizar;
-            btnCargar.Location = new Point(841, 56);
+            btnCargar.Location = new Point(248, 54);
             btnCargar.Name = "btnCargar";
             btnCargar.Size = new Size(27, 23);
             btnCargar.TabIndex = 6;
             btnCargar.UseVisualStyleBackColor = true;
             btnCargar.Click += btnCargar_Click;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(72, 21, 30);
+            panel1.Controls.Add(btnCargar);
+            panel1.Controls.Add(btnBuscar);
+            panel1.Controls.Add(txtBuscar);
+            panel1.Controls.Add(dgvTablaCliente);
+            panel1.Controls.Add(groupBox1);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(895, 522);
+            panel1.TabIndex = 7;
+            // 
             // FormsCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(895, 522);
-            Controls.Add(btnCargar);
-            Controls.Add(btnBuscar);
-            Controls.Add(txtBuscar);
-            Controls.Add(dgvTablaCliente);
-            Controls.Add(groupBox1);
+            Controls.Add(panel1);
             Name = "FormsCliente";
             Text = "        ";
             ((System.ComponentModel.ISupportInitialize)dgvTablaCliente).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -283,5 +306,6 @@
         private Button btnBuscar;
         private Button button2;
         private Button btnCargar;
+        private Panel panel1;
     }
 }
