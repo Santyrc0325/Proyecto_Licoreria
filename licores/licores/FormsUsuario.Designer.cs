@@ -49,6 +49,8 @@
             btnCargarUsuario = new Button();
             btnBuscarUsuario = new Button();
             txtBuscarUsuario = new TextBox();
+            textContraseñaUser = new TextBox();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvTablaUsers).BeginInit();
             groupBox1.SuspendLayout();
             panel1.SuspendLayout();
@@ -69,6 +71,8 @@
             // groupBox1
             // 
             groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            groupBox1.Controls.Add(textContraseñaUser);
+            groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(txtidUser);
             groupBox1.Controls.Add(btnEliminar);
@@ -116,7 +120,7 @@
             // btnEliminar
             // 
             btnEliminar.ForeColor = Color.Black;
-            btnEliminar.Location = new Point(119, 297);
+            btnEliminar.Location = new Point(119, 322);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(95, 32);
             btnEliminar.TabIndex = 12;
@@ -127,7 +131,7 @@
             // btnModificar
             // 
             btnModificar.ForeColor = Color.Black;
-            btnModificar.Location = new Point(12, 297);
+            btnModificar.Location = new Point(12, 322);
             btnModificar.Name = "btnModificar";
             btnModificar.Size = new Size(101, 32);
             btnModificar.TabIndex = 11;
@@ -138,7 +142,7 @@
             // btnGuardar
             // 
             btnGuardar.ForeColor = Color.Black;
-            btnGuardar.Location = new Point(12, 258);
+            btnGuardar.Location = new Point(12, 283);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(202, 33);
             btnGuardar.TabIndex = 10;
@@ -268,6 +272,22 @@
             txtBuscarUsuario.Size = new Size(576, 23);
             txtBuscarUsuario.TabIndex = 12;
             // 
+            // textContraseñaUser
+            // 
+            textContraseñaUser.Location = new Point(93, 254);
+            textContraseñaUser.Name = "textContraseñaUser";
+            textContraseñaUser.Size = new Size(121, 23);
+            textContraseñaUser.TabIndex = 16;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(15, 262);
+            label7.Name = "label7";
+            label7.Size = new Size(72, 15);
+            label7.TabIndex = 15;
+            label7.Text = "Contraseña:";
+            // 
             // FormsUsuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -311,5 +331,7 @@
         private Button btnCargarUsuario;
         private Button btnBuscarUsuario;
         private TextBox txtBuscarUsuario;
+        private TextBox textContraseñaUser;
+        private Label label7;
     }
 }

@@ -52,7 +52,6 @@ namespace licores
             // 
             panel1.BackColor = Color.FromArgb(64, 0, 0);
             panel1.Controls.Add(pictureBox2);
-            panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(250, 330);

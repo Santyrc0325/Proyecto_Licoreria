@@ -28,7 +28,7 @@ namespace licores
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             User users = new User();
-            users.guardarUsuarios(txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser);
+            users.guardarUsuarios(txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser, textContraseñaUser);
             users.mostrarUsuarios(dgvTablaUsers);
         }
 
@@ -40,20 +40,20 @@ namespace licores
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
             User users = new User();
-            users.guardarUsuarios(txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser);
+            users.guardarUsuarios(txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser, textContraseñaUser);
             users.mostrarUsuarios(dgvTablaUsers);
         }
 
         private void dgvTablaUsers_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             User users = new User();
-            users.seleccionarUsuario(dgvTablaUsers, txtidUser, txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser);
+            users.seleccionarUsuario(dgvTablaUsers, txtidUser, txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser, textContraseñaUser);
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
             User users = new User();
-            users.modificarUsuarios(txtidUser, txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser);
+            users.modificarUsuarios(txtidUser, txtCedulaUser, txtNombreUser, txtApellidoUser, txtCorreoUser, txtTelefonoUser, textContraseñaUser);
             users.mostrarUsuarios(dgvTablaUsers);
         }
 

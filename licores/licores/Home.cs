@@ -76,12 +76,6 @@ namespace licores
             hideSubMenu();
         }
 
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-            openChildForm(new FormsVentas());
-            hideSubMenu();
-        }
-
         private void button6_Click_1(object sender, EventArgs e)
         {
             showSubMenu(panel2);

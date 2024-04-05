@@ -31,11 +31,8 @@
             panelHMenuLateral = new Panel();
             panel2 = new Panel();
             button9 = new Button();
-            button7 = new Button();
-            button8 = new Button();
             button6 = new Button();
             panel1 = new Panel();
-            button5 = new Button();
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
@@ -74,10 +71,8 @@
             // 
             panel2.BackColor = Color.FromArgb(35, 32, 39);
             panel2.Controls.Add(button9);
-            panel2.Controls.Add(button7);
-            panel2.Controls.Add(button8);
             panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 412);
+            panel2.Location = new Point(0, 369);
             panel2.Name = "panel2";
             panel2.Size = new Size(183, 121);
             panel2.TabIndex = 3;
@@ -90,7 +85,7 @@
             button9.ForeColor = SystemColors.ControlLightLight;
             button9.Image = Properties.Resources.cerrar_sesion1;
             button9.ImageAlign = ContentAlignment.MiddleLeft;
-            button9.Location = new Point(0, 80);
+            button9.Location = new Point(0, 0);
             button9.Name = "button9";
             button9.Padding = new Padding(5, 0, 0, 0);
             button9.Size = new Size(183, 38);
@@ -98,38 +93,6 @@
             button9.Text = "Salir";
             button9.UseVisualStyleBackColor = true;
             button9.Click += button9_Click_1;
-            // 
-            // button7
-            // 
-            button7.Dock = DockStyle.Top;
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.ForeColor = SystemColors.ControlLightLight;
-            button7.Image = Properties.Resources.servicio_al_cliente1;
-            button7.ImageAlign = ContentAlignment.MiddleLeft;
-            button7.Location = new Point(0, 40);
-            button7.Name = "button7";
-            button7.Padding = new Padding(5, 0, 0, 0);
-            button7.Size = new Size(183, 40);
-            button7.TabIndex = 5;
-            button7.Text = "Contactos";
-            button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            button8.Dock = DockStyle.Top;
-            button8.FlatAppearance.BorderSize = 0;
-            button8.FlatStyle = FlatStyle.Flat;
-            button8.ForeColor = SystemColors.ControlLightLight;
-            button8.Image = Properties.Resources.engranaje;
-            button8.ImageAlign = ContentAlignment.MiddleLeft;
-            button8.Location = new Point(0, 0);
-            button8.Name = "button8";
-            button8.Padding = new Padding(5, 0, 0, 0);
-            button8.Size = new Size(183, 40);
-            button8.TabIndex = 4;
-            button8.Text = "Herramientas";
-            button8.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
@@ -141,7 +104,7 @@
             button6.ForeColor = SystemColors.MenuBar;
             button6.Image = Properties.Resources.pregunta;
             button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(0, 367);
+            button6.Location = new Point(0, 324);
             button6.Name = "button6";
             button6.Padding = new Padding(10, 0, 0, 0);
             button6.Size = new Size(183, 45);
@@ -153,32 +116,14 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(35, 32, 39);
-            panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button2);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 204);
             panel1.Name = "panel1";
-            panel1.Size = new Size(183, 163);
+            panel1.Size = new Size(183, 120);
             panel1.TabIndex = 1;
-            // 
-            // button5
-            // 
-            button5.Dock = DockStyle.Top;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.ForeColor = SystemColors.ControlLightLight;
-            button5.Image = Properties.Resources.grafico_de_barras;
-            button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(0, 120);
-            button5.Name = "button5";
-            button5.Padding = new Padding(5, 0, 0, 0);
-            button5.Size = new Size(183, 40);
-            button5.TabIndex = 3;
-            button5.Text = "Ventas";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click_1;
             // 
             // button4
             // 
@@ -283,6 +228,7 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox3.Image = Properties.Resources.slogan;
             pictureBox3.Location = new Point(220, 368);
             pictureBox3.Name = "pictureBox3";
@@ -293,6 +239,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = Properties.Resources.logo_trial;
             pictureBox1.Location = new Point(320, 61);
             pictureBox1.Name = "pictureBox1";
@@ -331,15 +278,12 @@
         private Panel panel1;
         private Button button1;
         private Panel panelLogo;
-        private Button button5;
         private Button button4;
         private Button button3;
         private Button button2;
         private Panel panel2;
-        private Button button8;
         private Button button6;
         private Button button9;
-        private Button button7;
         private Panel panelChildForms;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;

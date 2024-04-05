@@ -108,4 +108,3 @@ C:\Users\JSPSR\Desktop\Santiago\Proyecto_Licoreria\licores\licores\obj\Debug\net
 C:\Users\JSPSR\Desktop\Santiago\Proyecto_Licoreria\licores\licores\obj\Debug\net8.0-windows\licores.pdb
 C:\Users\JSPSR\Desktop\Santiago\Proyecto_Licoreria\licores\licores\obj\Debug\net8.0-windows\licores.genruntimeconfig.cache
 C:\Users\JSPSR\Desktop\Santiago\Proyecto_Licoreria\licores\licores\obj\Debug\net8.0-windows\ref\licores.dll
-C:\Users\JSPSR\Desktop\Santiago\Proyecto_Licoreria\licores\licores\obj\Debug\net8.0-windows\licores.FormsVentas.resources

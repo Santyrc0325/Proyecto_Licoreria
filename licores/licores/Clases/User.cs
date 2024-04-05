@@ -76,7 +76,7 @@ namespace licores.Clases
             }
         }
 
-        public void guardarUsuarios(TextBox cedula, TextBox nombre, TextBox apellidos, TextBox correo, TextBox telefono)
+        public void guardarUsuarios(TextBox cedula, TextBox nombre, TextBox apellidos, TextBox correo, TextBox telefono, TextBox pass)
         {
 
 
@@ -84,7 +84,7 @@ namespace licores.Clases
             {
                 Conexion conexion = new Conexion();
 
-                string query = "insert into users (cedula_User, nombre_User, apellido_User, correo_User, telefono_User, status_User)" + "values ('" + cedula.Text + "', '" + nombre.Text + "', '" + apellidos.Text + "', '" + correo.Text + "', '" + telefono.Text + "', '1');";
+                string query = "insert into users (cedula_User, nombre_User, apellido_User, correo_User, contraseña, telefono_User, status_User)" + "values ('" + cedula.Text + "', '" + nombre.Text + "', '" + apellidos.Text + "', '" + correo.Text + "', '" + pass.Text + "', '" + telefono.Text + "', '1');";
 
 
                 MySqlCommand myComand = new MySqlCommand(query, conexion.Open());
@@ -104,7 +104,7 @@ namespace licores.Clases
 
         }
 
-        public void seleccionarUsuario(DataGridView tablaUsuarios,TextBox idUser, TextBox cedula, TextBox nombre, TextBox apellidos, TextBox correo, TextBox telefono)
+        public void seleccionarUsuario(DataGridView tablaUsuarios,TextBox idUser, TextBox cedula, TextBox nombre, TextBox apellidos, TextBox correo, TextBox telefono, TextBox pass)
         {
             try
             {
@@ -115,6 +115,7 @@ namespace licores.Clases
                 apellidos.Text = tablaUsuarios.CurrentRow.Cells[3].Value.ToString();
                 correo.Text = tablaUsuarios.CurrentRow.Cells[4].Value.ToString();
                 telefono.Text = tablaUsuarios.CurrentRow.Cells[5].Value.ToString();
+                pass.Text = tablaUsuarios.CurrentRow.Cells[6].Value.ToString();
             }
             catch (Exception ex)
             {
@@ -122,7 +123,7 @@ namespace licores.Clases
             }
         }
 
-        public void modificarUsuarios(TextBox idUser, TextBox cedula, TextBox nombre, TextBox apellidos, TextBox correo, TextBox telefono)
+        public void modificarUsuarios(TextBox idUser, TextBox cedula, TextBox nombre, TextBox apellidos, TextBox correo, TextBox telefono, TextBox pass)
         {
             int numidUser = Convert.ToInt32(idUser.Text);
 
@@ -130,7 +131,7 @@ namespace licores.Clases
             {
                 Conexion conexion = new Conexion();
 
-                string query = "update users set cedula_User = '" + cedula.Text + "', nombre_User= '" + nombre.Text + "', apellido_User= '" + apellidos.Text + "', correo_User= '" + correo.Text + "', telefono_User= '" + telefono.Text + "' where id_User = '" + numidUser + "';";
+                string query = "update users set cedula_User = '" + cedula.Text + "', nombre_User= '" + nombre.Text + "', apellido_User= '" + apellidos.Text + "', correo_User= '" + correo.Text + "', contraseña= '" + pass.Text + "', telefono_User= '" + telefono.Text + "' where id_User = '" + numidUser + "';";
 
 
                 MySqlCommand myComand = new MySqlCommand(query, conexion.Open());
